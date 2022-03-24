@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+	--overpass-300-600: "verpass", ans-serif;
+	--ubuntu-400-500-700: "buntu", sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;	
+}
+nav {
+	 display: none;
+}
+
+body {
+	display:  flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+.section1 {
+	background-image: linear-gradient(180deg, 
+		hsl(13, 100%, 72%),
+		hsl(353, 100%, 62%)
+	);
+	height: 70vh;
+}
+.head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin: 2em auto;	
+}
+.cta {
+	width: 90;
+	margin: auto;
+	margin-top: 7em;
+}
+h1 {
+	font-size: 2.2em;
+	color: white;
+	font-family: var(--ubuntu-400-500-700);
+	font-weight: 400;
+}
+.section1 p {
+	color: white;
+	font-size: 1.1em;
+	font-family: var(--overpass-300-600);
+	font-weight: 300;
+	padding: 1em;
+}
+.section2 img,
+.section3 img,
+.section4 img {
+	width: 100%;
+}
+.btns {
+	width: 100%;
+	margin: 1em auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btns button {
+	border: none;
+	background: none;
+	font-family: var(--ubuntu-400-500-700);
+	font-size: 1em;
+	font-weight: 700;
+	padding: 1em;
+	border-radius: 100px;
+}
+.btns button:nth-of-type(1) {
+	background-color: white;
+	color: hsl(353, 100%, 62%);
+}
+.btns button:nth-of-type(2) {
+	border: 1px solid white;
+	color: white;
+}
+h2 {
+	font-size: 1.4em;
+	font-family: var(--ubuntu-400-500-700);
+	font-weight: 700;
+	color: hsl(208, 49%, 24);
+
+}
+@media screen and (min-width:  992px){
+	header{
+		display: grid;
+		grid-template-columns: 10% 85%;
+		width: 90%;
+		margin: auto;
+	}
+	#hamburger-icon {
+		display: none;
+	}
+	.divider {
+		display: none;
+	}
+	nav {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		background: none;
+		left: 0;
+		width: 100%;
+		gap: 10em;
+	}
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+	}
+	.nav-links {
+		width: 20%;
+		margin: 0;
+	}
+	.nav-links button {
+		margin: 0;
+		width: 30%;
+		color: white;
+	}
+	.nav-btns {
+		flex-direction: row;
+		width: 30%;
+		justify-content: end;
+		gap: 0;
+	}
+	.nav-btns button:nth-of-type(1){
+		width: 50%;
+		color: white;
+		padding: 0,8em;
+
+	}
+	.nav-btns button:nth-of-type(1){
+		width: 50%;
+		background-color: white;
+		background-image: none;
+		color: hsl(353, 100%, 62%);
+	}
+	.nav-links img {
+		content:  url(images/icon-arrow-light.svg);
+	}
+	.nav-link {
+		position: relative;
+	}
+	.nav-link div {
+		display: block;
+		position: absolute;
+		background-color: white;
+		right: 1;
+		margin-top: 1en;
+		width: max-content;
+		padding-right: 3em;
+	}
+	.nav-link li {
+		text-align: start;
+	}
+	nav button:hover {
+		text-decoration: underline;		
+	}
+	.nav-btns button:nth-of-type(1):hover {
+		text-align: none;
+		background: none;
+		background-color: hsl(355, 100%, 74%);
+		color: white;
+	}
+}
